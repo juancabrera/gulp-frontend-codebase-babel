@@ -1,6 +1,6 @@
 {
-  "name": "gulp-frontend-codebase-6to5",
-  "description": "A basic gulp codebase project using 6to5ify, SASS, Autoprefixer and Slim.",
+  "name": "gulp-frontend-codebase-babel",
+  "description": "A basic gulp codebase project using babelify, SASS, Autoprefixer and Slim.",
   "private": true,
   "version": "0.0.1",
   "author": "Juan Cabrera",
