@@ -5,7 +5,7 @@ var
   gulp               = require('gulp'),
   connect            = require('gulp-connect'),
   browserify         = require("browserify"), 
-  to5ify             = require("6to5ify"), 
+  to5ify             = require("babelify"), 
   sass               = require('gulp-ruby-sass'), 
   prefix             = require('gulp-autoprefixer'),
   slim               = require("gulp-slim")
