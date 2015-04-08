@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "author": "Juan Cabrera",
   "devDependencies": {
-    "babelify": "^5.0.4",
-    "browserify": "^9.0.3",
+    "babelify": "^6.0.2",
+    "browserify": "^9.0.7",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-connect": "^2.0.6",
