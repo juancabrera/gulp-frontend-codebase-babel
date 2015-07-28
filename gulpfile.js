@@ -5,16 +5,16 @@ var
   gulp               = require('gulp'),
   connect            = require('gulp-connect'),
   browserify         = require("browserify"),
-  to5ify             = require("babelify"),
+  babelify           = require("babelify"),
   sass               = require('gulp-ruby-sass'),
   prefix             = require('gulp-autoprefixer'),
   slim               = require("gulp-slim")
 ;
 
 // JavaScript
-gulp.task('to5ify', function() {
+gulp.task('babelify', function() {
   browserify('./source/js/main.js', { debug: false })
-    .transform(to5ify)
+    .transform(babelify)
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
     .pipe(fs.createWriteStream("./dist/js/main.js"));
@@ -45,7 +45,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./source/js/*.js', ['to5ify']);
+  gulp.watch('./source/js/*.js', ['babelify']);
   gulp.watch('./source/scss/*.scss', ['scss2css']);
   gulp.watch('./source/slim/*.slim', ['slim2html']);
 });
