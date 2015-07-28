@@ -1,12 +1,12 @@
 'use strict';
 
 var
-  fs                 = require("fs"), 
+  fs                 = require("fs"),
   gulp               = require('gulp'),
   connect            = require('gulp-connect'),
-  browserify         = require("browserify"), 
-  to5ify             = require("babelify"), 
-  sass               = require('gulp-ruby-sass'), 
+  browserify         = require("browserify"),
+  to5ify             = require("babelify"),
+  sass               = require('gulp-ruby-sass'),
   prefix             = require('gulp-autoprefixer'),
   slim               = require("gulp-slim")
 ;
@@ -22,7 +22,7 @@ gulp.task('to5ify', function() {
 
 // Styles
 gulp.task('scss2css', function() {
-  sass('./source/scss/main.scss') 
+  sass('./source/scss/main.scss')
   .on('error', function (err) {
     console.error('Error!', err.message);
   })
