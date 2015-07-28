@@ -3,7 +3,7 @@ Gulp frontend codebase
 
 A basic gulp codebase project using:
 
-- [Browserify](http://browserify.org/) with [6to5ify](https://6to5.org/docs/using-6to5/#browserify)
+- [Browserify](http://browserify.org/) with [babelify](https://babeljs.io/docs/setup/#browserify)
 - [Slim](http://slim-lang.com/)
 - [SASS](http://sass-lang.com/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer-core)
