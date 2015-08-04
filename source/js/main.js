@@ -1,5 +1,5 @@
-import {moduleTest} from './module';
+import {three60} from './three60';
 
-let test = new moduleTest();
+let frames = new three60();
 
-test.showConsoleLog();
+frames.init("sm", "./dist/frames/frame{i}.jpg", 559);
