@@ -13,7 +13,7 @@ var
 
 // JavaScript
 gulp.task('babelify', function() {
-  browserify('./source/js/main.js', { debug: false })
+  browserify('./source/js/main.js', { debug: false, sourceType: 'module' })
     .transform(babelify)
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
@@ -41,7 +41,7 @@ gulp.task('slim2html', function(){
 
 // Local webserver
 gulp.task('connect', function() {
-  connect.server();
+  connect.server({port: 1111});
 });
 
 gulp.task('watch', function() {
